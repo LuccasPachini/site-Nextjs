@@ -12,15 +12,15 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.GMAIL_USER, // Ex: savecadeiras@gmail.com
-        pass: process.env.GMAIL_PASS, // Senha de app gerada no Gmail
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS,
       },
     })
 
     await transporter.sendMail({
-      from: process.env.EMAIL_USER, // Ainda sai do seu Gmail
-      to: process.env.RECEIVER_EMAIL, // Ou diretamente: 'savecadeiras@gmail.com'
-      replyTo: email, // <- Aqui está a mágica!
+      from: process.env.EMAIL_USER, 
+      to: process.env.RECEIVER_EMAIL,
+      replyTo: email,
       subject: 'Nova mensagem do formulário de contato',
       html: `
         <div style="font-family: sans-serif; line-height: 1.6;">
