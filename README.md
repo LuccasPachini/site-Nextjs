@@ -1,35 +1,30 @@
-Projeto Site Empresarial — Next.js + TypeScript
+# Projeto Site Empresarial — Next.js + TypeScript
+
 Este projeto foi desenvolvido para reformular o site do negócio do meu irmão, trazendo uma interface moderna, responsiva e funcional utilizando Next.js e TypeScript.
 
-Sobre
+## Sobre
+
 O site original era simples e visualmente pouco atrativo. Com o intuito de aplicar meus estudos e ajudar a família, desenvolvi esta versão atualizada para proporcionar melhor experiência para os visitantes e facilitar a apresentação do negócio.
 
-Tecnologias utilizadas
-Next.js — Framework React para aplicações web com renderização híbrida (SSR/SSG)
+## Tecnologias utilizadas
 
-TypeScript — Superset de JavaScript com tipagem estática
+- [Next.js](https://nextjs.org/) — Framework React para aplicações web com renderização híbrida (SSR/SSG)
+- [TypeScript](https://www.typescriptlang.org/) — Superset de JavaScript com tipagem estática
+- Tailwind CSS — para estilização responsiva e modular
 
-CSS Modules / Tailwind CSS (caso tenha usado) — para estilização responsiva e modular
+## Funcionalidades principais
 
-(Outras tecnologias se aplicarem: ex. APIs, bibliotecas específicas)
+- Layout responsivo para dispositivos móveis e desktop
+- Navegação simples e intuitiva
+- Seções personalizadas com informações sobre o negócio
+- Otimização para desempenho e SEO básica
+- (Outras funcionalidades específicas do projeto)
 
-Funcionalidades principais
-Layout responsivo para dispositivos móveis e desktop
+## Como rodar localmente
 
-Navegação simples e intuitiva
+1. Clone este repositório:
 
-Seções personalizadas com informações sobre o negócio
-
-Otimização para desempenho e SEO básica
-
-(Outras funcionalidades específicas do projeto)
-
-Como rodar localmente
-Clone este repositório:
-
-bash
-Copiar
-Editar
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 Instale as dependências:
 
@@ -51,3 +46,9 @@ Acesse http://localhost:3000 no seu navegador.
 
 Contato
 Se quiser trocar uma ideia sobre o projeto ou tecnologia usada, fique à vontade para entrar em contato!
+
+go
+Copiar
+Editar
+
+Se quiser, posso criar um arquivo `.md` para você baixar e usar direto!
