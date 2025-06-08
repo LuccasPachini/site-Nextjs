@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
@@ -25,7 +24,6 @@
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/aos": "^3.0.7",
     "@types/node": "^20",
