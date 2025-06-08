@@ -51,7 +51,7 @@ export function Contact() {
   }
 
   return(
-        <section id="contact" className="bg-white py-12 lg:py-42 lg:flex">
+        <section id="contact" className="bg-white py-12 lg:py-42 lg:flex" data-aos="fade-up" data-aos-delay="100">
       {/* Lado esquerdo com texto e redes */}
       <div className="flex flex-col justify-center w-full p-8 lg:px-12 xl:px-32 lg:w-1/2">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-800 capitalize">fale conosco.</h1>

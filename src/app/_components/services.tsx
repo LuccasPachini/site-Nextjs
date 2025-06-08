@@ -8,8 +8,11 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import foto1 from '../../../public/antes_depois_1.png'
 import foto2 from '../../../public/teste2.png'
 import foto3 from '../../../public/teste3.png'
+import foto4 from '../../../public/antes_depois_001.png'
+import foto5 from '../../../public/antes_depois002.png'
+import foto6 from '../../../public/antes_depois_03.png'
 
-const images = [foto1, foto2, foto3]
+const images = [foto1, foto2, foto3, foto4, foto5]
 
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -31,7 +34,7 @@ export function Services() {
   }, [emblaApi])
 
   return (
-    <section id="services" className="bg-white py-10">
+    <section id="services" className="bg-white py-10" data-aos="fade-right" data-aos-delay="100">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center">Nossos Serviços</h2>
 
