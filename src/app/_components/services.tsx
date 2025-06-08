@@ -10,9 +10,11 @@ import foto2 from '../../../public/teste2.png'
 import foto3 from '../../../public/teste3.png'
 import foto4 from '../../../public/antes_depois_001.png'
 import foto5 from '../../../public/antes_depois002.png'
-import foto6 from '../../../public/antes_depois_03.png'
+import foto6 from '../../../public/ants_dps.png'
+import foto7 from '../../../public/ants_dps_2.png'
+import foto8 from '../../../public/antesdepois.png'
 
-const images = [foto1, foto2, foto3, foto4, foto5]
+const images = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8]
 
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
