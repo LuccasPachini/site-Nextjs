@@ -18,4 +18,6 @@ O site original era simples e visualmente pouco atrativo. Com o intuito de aplic
 - Navegação simples e intuitiva
 - Seções personalizadas com informações sobre o negócio
 - Otimização para desempenho e SEO básica
-- (Outras funcionalidades específicas do projeto)
+
+## Deploy
+https://www.savecadeiras.com.br/
