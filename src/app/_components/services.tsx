@@ -13,18 +13,16 @@ import foto5 from '../../../public/antes_depois002.png'
 import foto6 from '../../../public/ants_dps.png'
 import foto7 from '../../../public/ants_dps_2.png'
 import foto8 from '../../../public/antesdepois.png'
+import foto9 from '../../../public/fotos_novas1.png'
+import foto10 from '../../../public/fotos_novas2.png'
 
-const images = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8]
+const images = [foto1, foto2, foto3, foto4, foto10,foto5, foto6, foto7, foto9, foto8]
 
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
     align: "start",
-    slidesToScroll: 1,
-    breakpoints: {
-      "(min-width: 760px)": { slidesToScroll: 2 },
-      "(min-width: 1024px)": { slidesToScroll: 3 }
-    }
+    slidesToScroll: 1,  // 👉 Sempre passa 1 por vez
   })
 
   const scrollPrev = useCallback(() => {
@@ -84,7 +82,6 @@ export function Services() {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>
