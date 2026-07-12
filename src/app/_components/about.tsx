@@ -28,8 +28,8 @@ export function About() {
             </h2>
 
             <p className="lg:text-lg text-gray-800 leading-relaxed">
-              A Save Cadeiras é especializada em reforma e manutenção de cadeiras de escritório.
-              Atuamos com tapeçaria, reparos estruturais e mecânicos, troca de peças, revisões periódicas
+              A Save Cadeiras é especializada em reforma, higienização e manutenção de cadeiras de escritório.
+              Atuamos com tapeçaria, reparos estruturais e mecânicos, troca de peças, higienização profissional, revisões periódicas
               e projetos personalizados para empresas e clientes particulares.
               Estamos localizados em Osasco-SP e atendemos toda a Grande São Paulo, Capital e interior.
               Também oferecemos serviços a domicílio, além de retirada e entrega, conforme a necessidade.
