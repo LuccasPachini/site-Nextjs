@@ -12,17 +12,20 @@ import fotoIntermediaria from '../../../public/ft_5.jpg'
 import foto3 from '../../../public/ft_3.jpg'
 import foto4 from '../../../public/antes_depois_001.png'
 import foto5 from '../../../public/antes_depois002.png'
+import fotoIntermediaria2 from '../../../public/ft_7.jpg'
 import foto6 from '../../../public/ants_dps.png'
 import foto7 from '../../../public/ants_dps_2.png'
 import foto8 from '../../../public/antesdepois.png'
 import foto9 from '../../../public/fotos_novas1.png'
 import foto10 from '../../../public/fotos_novas2.png'
 import foto11 from '../../../public/ft_4.jpg'
+import foto12 from '../../../public/ft_6.jpg'
+import foto13 from '../../../public/ft_8.jpg'
 import fotoHigienizacao from '../../../public/higienizacao.png'
 import fotoHigienizacao2 from '../../../public/ft_higienizacao.jpg'
 import fotoHigienizacao3 from '../../../public/ft_higienizacao_2.jpg'
 
-const reformaImages = [foto1, foto2, fotoIntermediaria, foto3, foto4, foto10, foto5, foto6, foto7, foto9, foto8, foto11]
+const reformaImages = [foto1, foto2, fotoIntermediaria, foto3, foto4, fotoIntermediaria2, foto10, foto5, foto6, foto7, foto9, foto8, foto11, foto12, foto13]
 
 const higienizacaoSteps = [
   {
