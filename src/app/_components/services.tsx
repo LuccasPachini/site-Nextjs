@@ -6,9 +6,10 @@ import { useCallback } from 'react'
 import { ChevronLeft, ChevronRight, Wrench, Sparkles, ShieldCheck, Wind, Clock } from 'lucide-react'
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 
-import foto1 from '../../../public/antes_depois_1.png'
-import foto2 from '../../../public/teste2.png'
-import foto3 from '../../../public/teste3.png'
+import foto1 from '../../../public/ft_1.jpg'
+import foto2 from '../../../public/ft_2.jpg'
+import fotoIntermediaria from '../../../public/ft_5.jpg'
+import foto3 from '../../../public/ft_3.jpg'
 import foto4 from '../../../public/antes_depois_001.png'
 import foto5 from '../../../public/antes_depois002.png'
 import foto6 from '../../../public/ants_dps.png'
@@ -16,9 +17,12 @@ import foto7 from '../../../public/ants_dps_2.png'
 import foto8 from '../../../public/antesdepois.png'
 import foto9 from '../../../public/fotos_novas1.png'
 import foto10 from '../../../public/fotos_novas2.png'
+import foto11 from '../../../public/ft_4.jpg'
 import fotoHigienizacao from '../../../public/higienizacao.png'
+import fotoHigienizacao2 from '../../../public/ft_higienizacao.jpg'
+import fotoHigienizacao3 from '../../../public/ft_higienizacao_2.jpg'
 
-const reformaImages = [foto1, foto2, foto3, foto4, foto10, foto5, foto6, foto7, foto9, foto8]
+const reformaImages = [foto1, foto2, fotoIntermediaria, foto3, foto4, foto10, foto5, foto6, foto7, foto9, foto8, foto11]
 
 const higienizacaoSteps = [
   {
@@ -160,18 +164,8 @@ export function Services() {
             <div className="w-16 h-1 rounded-full bg-[#25a3f1] mt-1" />
           </div>
 
-          {/* Layout: imagem + etapas lado a lado */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12">
-
-            {/* Imagem */}
-            <div className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-sm" style={{ aspectRatio: '1408 / 768' }}>
-              <Image
-                src={fotoHigienizacao}
-                alt="Higienização de cadeira"
-                fill
-                className="object-cover object-center"
-              />
-            </div>
+          {/* Layout: etapas + mosaico de imagens */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-12">
 
             {/* Etapas */}
             <div className="flex flex-col gap-4">
@@ -189,6 +183,52 @@ export function Services() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Mobile: imagem principal em destaque + duas menores abaixo */}
+            <div className="flex flex-col gap-3 lg:hidden">
+              <div className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-sm aspect-square bg-black">
+                <Image src={fotoHigienizacao2} alt="Antes e depois da higienização" fill className="object-contain" />
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-sm aspect-[4/3]">
+                  <Image src={fotoHigienizacao} alt="Higienização de cadeira" fill className="object-cover object-center" />
+                </div>
+                <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-sm aspect-[4/3]">
+                  <Image src={fotoHigienizacao3} alt="Processo de higienização" fill className="object-cover object-center" />
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop: mosaico — foto principal grande à esquerda, duas menores à direita */}
+            <div className="hidden lg:grid grid-cols-2 grid-rows-2 gap-3 h-[480px]">
+              {/* Imagem principal — ocupa as 2 linhas */}
+              <div className="relative row-span-2 rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-black">
+                <Image
+                  src={fotoHigienizacao2}
+                  alt="Antes e depois da higienização"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              {/* Foto superior */}
+              <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+                <Image
+                  src={fotoHigienizacao}
+                  alt="Higienização de cadeira"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
+              {/* Foto inferior */}
+              <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+                <Image
+                  src={fotoHigienizacao3}
+                  alt="Processo de higienização"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
 
